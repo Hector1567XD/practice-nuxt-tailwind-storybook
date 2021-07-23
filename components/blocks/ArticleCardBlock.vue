@@ -16,8 +16,9 @@
             v-if="article.cover_image"
             :src="article.cover_image"
             :alt="article.title"
+            class="w-full"
           />
-          <img v-else :src="article.social_image" :alt="article.title" />
+          <img v-else class="w-full" :src="article.social_image" :alt="article.title" />
         </div>
         <div class="content p-2 h-full flex flex-col justify-between">
           <div>
