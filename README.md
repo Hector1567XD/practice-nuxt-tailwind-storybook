@@ -7,17 +7,20 @@ Este repositorio contiene un "clon" de dev.to muy basico (y feo) basado en el [T
 ## Build Setup
 
 ```bash
-# install dependencies
+# instalar las dependencias
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# iniciar servidor de desarrollo en el puerto localhost:5050 (no, no es el puerto 3000) ⚙️
 $ yarn dev
 
-# build for production and launch server
+# encendender servidor de storybook! 📕
+$ yarn storybook
+
+# compilar a produccion y poner a correr
 $ yarn build
 $ yarn start
 
-# generate static project
+# generar proyecto estatico??
 $ yarn generate
 ```
 
