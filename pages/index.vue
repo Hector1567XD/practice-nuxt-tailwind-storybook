@@ -1,35 +1,17 @@
 <template>
-  <div>
-    <div class="grid mt-2 md:grid-cols-2 lg:grid-cols-3">
-        <article-card-block
-          :article="article"
-          v-for="(article) in articles"
-          :key="article.id"
-          class="article-card-block my-3 mx-1 md:m-3"
-        />
+  <div class="mt-5">
+    <div>
+      <h1 class="text-4xl font-bold my-2">Articulos</h1>
     </div>
+    <articles-grid tag="nuxt" />
   </div>
 </template>
 
 <script>
-  import ArticleCardBlock from '@/components/blocks/ArticleCardBlock'
-
+  import ArticlesGrid from '@/components/blocks/ArticlesGrid'
   export default {
     components: {
-      ArticleCardBlock
-    },
-    data() {
-      return {
-        currentPage: 1,
-        articles: []
-      }
-    },
-    async fetch() {
-      const articles = await fetch(
-        `https://dev.to/api/articles?tag=nuxt&state=rising&page=${this.currentPage}`
-      ).then(res => res.json())
-
-      this.articles = this.articles.concat(articles)
+      ArticlesGrid
     }
   }
 </script>

@@ -25,7 +25,9 @@
               :to="{name: 'username-article', 
               params: { username: article.user.username, article: article.id } }"
             >
-              <h1 class="text-gray-900 sm:text-lg lg:text-xl font-bold group-hover:text-indigo-500">{{ article.title }}</h1>
+              <h1 class="text-gray-900 sm:text-lg lg:text-xl font-bold group-hover:text-indigo-500">
+                {{ article.title }}
+              </h1>
             </nuxt-link>
             <div class="tags">
               <nuxt-link

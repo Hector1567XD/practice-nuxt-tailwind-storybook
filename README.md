@@ -1,5 +1,9 @@
 # learning-nuxt-app
 
+## Sobre este proyecto
+
+Este repositorio contiene un "clon" de dev.to muy basico (y feo) basado en el [Tutorial del blog de Nuxt](https://nuxtjs.org/blog/build-dev-to-clone-with-nuxt-new-fetch), fue realizado con fines de practica, aprendizaje y experimentacion.
+
 ## Build Setup
 
 ```bash
